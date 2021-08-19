@@ -11,6 +11,7 @@ import websocket
 import hashlib
 import hmac
 from urllib.parse import urlencode
+from binance.client import Client
 
 # Importing user modules
 import models
@@ -28,18 +29,21 @@ class BinanceFuturesClient:
         else:
             self._base_url = "https://fapi.binance.com"
             self._wss_url = "wss://fstream.binance.com"
-
+        
+        self.logs = []
         self.prices = {}
         self._public_api = public_api
         self._secret_api = secret_api
         self._headers = {'X-MBX-APIKEY': self._public_api}
         self._ws_id = 1
         self.ws = None
+        self.reconnect = True
+        self.strategies = {}
         
         self.contracts = self.get_contracts()
         self.balance = self.get_acc_balance()
         print(f'My binance balance {self.balance["USDT"].wallet_balance}')
-        
+         
         t = threading.Thread(target=self._start_ws)     
         t.start()
         logger.info('Binance Future Client connected successfully!!')
@@ -102,7 +106,7 @@ class BinanceFuturesClient:
         candle_data = self._make_request('GET', '/fapi/v1/klines', data)
         history_data = []
         for each_data in candle_data:
-            history_data.append(models.CandleInfo(each_data))
+            history_data.append(models.Candle(each_data, 'bookTicker'))
             
         return history_data
     
@@ -114,7 +118,7 @@ class BinanceFuturesClient:
             self.prices[symbol] = {'bid': float(response_data['bidPrice']), 
                                    'ask': float(response_data['askPrice'])}
             
-        return self.prices[symbol]
+        return self.prices.get(symbol)
 
     def get_acc_balance(self):
         data = {}
@@ -136,18 +140,19 @@ class BinanceFuturesClient:
             
             return balance  
 
-    def place_order(self, contract, side, quantity, order_type, price=None, tif=None):
+    def place_order(self, contract, order_type, quantity, side, price=None, tif=None):
         data = {}
         quantity = round(round(quantity / contract.lot_size) * contract.lot_size, 8)
-        data.update({'symbol': contract.symbol, 'side': side, 'type': order_type, 
-                     'quantity': quantity})
+        data.update({'symbol': contract.symbol, 'side': side.upper(),
+                      'type': order_type, 'quantity': quantity})
         if tif:
             data.update({'timeInForce': tif})
         if price:
             price = round(round(price / contract.tick_size) * contract.tick_size, 8)
             data.update({'price': price})
-            
-        data.update({'timestamp': int(time.time() * 1000)})
+        
+        # data.update({'timestamp': int(time.time() * 1000)})
+        data.update({'timestamp': self.get_server_time()})
         my_sign = self._generate_sign(data)
         data.update({'signature': my_sign})
         post_order = self._make_request('POST', '/fapi/v1/order', data)  
@@ -172,8 +177,9 @@ class BinanceFuturesClient:
 
     def get_order_status(self, symbol, order_id):
         data = {}
-        data.update({'symbol': symbol, 'orderId': order_id})            
-        data.update({'timestamp': int(time.time() * 1000)})
+        data.update({'symbol': symbol, 'orderId': order_id})   
+        # data.update({'timestamp': int(time.time() * 1000)})
+        data.update({'timestamp': self.get_server_time()})
         my_sign = self._generate_sign(data)
         data.update({'signature': my_sign})
         order_status = self._make_request('GET', '/fapi/v1/order', data)  
@@ -192,7 +198,10 @@ class BinanceFuturesClient:
         # Running this loop infintely to get live market updates.
         while True:
             try:
-                self.ws.run_forever() 
+                if self.reconnect:
+                    self.ws.run_forever() 
+                else:
+                    break
             except Exception:
                 logger.error('Error while running run_forever() websocket \
                              method.')
@@ -204,9 +213,12 @@ class BinanceFuturesClient:
     
     def _on_open(self, ws):
         logger.info('Binance client connection opened.')
-        self.subscribe_channel(list(self.contracts.values()), 'bookTicker')
-            
-    def _on_close(self, ws):
+        # self.subscribe_channel(list(self.contracts['BTCUSDT']), 'bookTicker')
+        # self.subscribe_channel(list(self.contracts['BTCUSDT']), 'aggTrade')
+        self.subscribe_channel(['BTCUSDT'], 'bookTicker')
+        self.subscribe_channel(['BTCUSDT'], 'aggTrade')
+           
+    def _on_close(self, ws, dummy1, dummy2):
         logger.warning('Binance client connection closed!!')
     
     def _on_error(self, ws, msg):
@@ -221,9 +233,39 @@ class BinanceFuturesClient:
                 if symbol:
                     self.prices[symbol] = {'bid': float(data['b']), 
                                    'ask': float(data['a'])}
+                    
+                if symbol == 'BTCUSDT':
+                    # self._add_log(symbol + ' ' + str(self.prices[symbol]['bid'])
+                    #               + '-->' + str(self.prices[symbol]['ask']))
+                    pass 
                 
-                print(symbol, self.prices[symbol]) 
-                
+                # Updating the PNL value in UI
+                try:
+                    for b_index, strat in self.strategies.items():
+                        if strat.contract.symbol == symbol:
+                            for trade in strat.trades:
+                                if trade.status == 'open' and \
+                                    trade.entry_price is not None:
+                                    if trade.side == 'long':
+                                        trade.pnl = (self.prices[symbol]['bid'] \
+                                                    - float(trade.entry_price)) \
+                                                    * trade.quantity
+                                    elif trade.side == 'short':
+                                        trade.pnl = ((float(trade.entry_price)) \
+                                                    - self.prices[symbol]['ask']) \
+                                                    * trade.quantity
+
+                except RuntimeError as rte:
+                    logger.error(f'Error while updating pnl in UI: {rte}')
+
+            elif data.get('e') == 'aggTrade':
+                symbol = data.get('s')
+                for key, strat in self.strategies.items():
+                    if strat.contract.symbol == symbol:
+                        candle_info = strat.parse_trades(float(data['p']), 
+                                            float(data['q']), data['T'])
+                        strat.check_trade(candle_info)
+
         except Exception as e:
             traceback.print_exc()
             pprint(f'Exception araised during message reception: {e}')
@@ -233,7 +275,7 @@ class BinanceFuturesClient:
         data.update({'method': 'SUBSCRIBE', 'id': self._ws_id})
         data['params'] = []
         for contract in contracts:
-            data['params'].append(contract.symbol.lower() + '@' + channel)
+            data['params'].append('btcusdt' + '@' + channel)
             
         data_str = json.dumps(data)
         try:
@@ -244,3 +286,28 @@ class BinanceFuturesClient:
             logger.error(traceback.format_exc())
 
         self._ws_id += 1
+
+    def _add_log(self, msg):
+        # logger.info(msg)
+        self.logs.append({'log': msg, 'displayed': False})
+        pass 
+    
+    def get_trade_size(self, contract, price, balance_pct):
+        all_balances = self.get_acc_balance()
+        if all_balances.get('USDT'):
+            balance = all_balances['USDT'].wallet_balance
+        else:
+            return None
+        
+        trade_size = (balance * balance_pct / 100) / price
+        trade_size = round(round(trade_size / contract.lot_size) * contract.lot_size, 8)
+        logger.info(f'Binance Futures current USDT balance = {balance}, trade size = {trade_size}')
+        return trade_size
+
+    def get_server_time(self):
+       # Should be commented for production.
+        client = Client(self._public_api, self._secret_api)
+        server_time = client.get_server_time()
+
+        return server_time['serverTime']
+

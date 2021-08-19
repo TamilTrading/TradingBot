@@ -1,0 +1,377 @@
+2021-08-10 16:45:40,358 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2021-08-10 16:45:41,479 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2021-08-10 16:45:41,571 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2021-08-10 16:45:42,383 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1628594141545&signature=4e9e65f22190d3d4dccdd27b43f2cfa5c9bb31731ac48fa19f74e5b881550a2f HTTP/1.1" 200 None
+2021-08-10 16:45:42,390 INFO :: Binance Futures Client successfully initialized
+2021-08-10 16:45:42,395 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2021-08-10 16:45:43,521 INFO :: Binance connection opened
+2021-08-10 16:45:43,654 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 200 None
+2021-08-10 16:45:43,735 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x05B960D0>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:45:43,735 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:45:43,855 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2021-08-10 16:45:45,261 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 200 None
+2021-08-10 16:45:45,264 INFO :: Bitmex Client successfully initialized
+2021-08-10 16:45:53,226 INFO :: Binance connection opened
+2021-08-10 16:45:53,402 INFO :: Bitmex connection opened
+2021-08-10 16:45:53,413 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x05B960D0>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:45:53,414 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:02,375 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2021-08-10 16:46:02,945 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2021-08-10 16:46:02,960 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2021-08-10 16:46:03,513 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1628594162955&signature=ef2263faaa870994a8e75ebc0f7c0d4a72ec554dad4aa790b96cdd86f3646045 HTTP/1.1" 200 None
+2021-08-10 16:46:03,525 INFO :: Binance Futures Client successfully initialized
+2021-08-10 16:46:03,536 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2021-08-10 16:46:04,200 INFO :: Binance connection opened
+2021-08-10 16:46:04,390 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x052BBE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:04,393 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 200 None
+2021-08-10 16:46:04,391 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:04,603 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2021-08-10 16:46:06,396 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 200 None
+2021-08-10 16:46:06,406 INFO :: Bitmex Client successfully initialized
+2021-08-10 16:46:07,185 INFO :: Binance connection opened
+2021-08-10 16:46:07,398 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x052BBE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:07,399 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:07,446 INFO :: Bitmex connection opened
+2021-08-10 16:46:10,265 INFO :: Binance connection opened
+2021-08-10 16:46:11,813 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x052BBE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:11,814 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:14,546 INFO :: Binance connection opened
+2021-08-10 16:46:14,776 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x052BBE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:14,786 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:17,508 INFO :: Binance connection opened
+2021-08-10 16:46:17,871 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x052BBE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:17,873 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:18,617 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x053199D0>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:46:18,618 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:47:25,114 INFO :: Binance Future Client connected successfully!!
+2021-08-10 16:47:26,713 INFO :: Binance client connection opened.
+2021-08-10 16:49:23,185 INFO :: Binance Future Client connected successfully!!
+2021-08-10 16:49:24,060 INFO :: Binance client connection opened.
+2021-08-10 16:50:08,534 INFO :: Binance Future Client connected successfully!!
+2021-08-10 16:50:09,484 INFO :: Binance client connection opened.
+2021-08-10 16:51:32,384 INFO :: Binance Future Client connected successfully!!
+2021-08-10 16:51:33,287 INFO :: Binance client connection opened.
+2021-08-10 16:52:54,177 INFO :: Binance Future Client connected successfully!!
+2021-08-10 16:52:55,053 INFO :: Binance client connection opened.
+2021-08-10 16:54:07,142 INFO :: Binance Future Client connected successfully!!
+2021-08-10 16:54:08,160 INFO :: Binance client connection opened.
+2021-08-10 16:55:54,249 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2021-08-10 16:55:55,553 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2021-08-10 16:55:55,586 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2021-08-10 16:55:56,191 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1628594755574&signature=728f1a9466d7dba638b45ef6ff4b0ca2be1485e7ea0ab5e2fbd73f78d680a5a5 HTTP/1.1" 200 None
+2021-08-10 16:55:56,203 INFO :: Binance Futures Client successfully initialized
+2021-08-10 16:55:56,214 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2021-08-10 16:55:57,063 INFO :: Binance connection opened
+2021-08-10 16:55:57,262 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 200 None
+2021-08-10 16:55:57,535 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x05ECBE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:55:57,537 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:55:57,597 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2021-08-10 16:55:58,672 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 200 None
+2021-08-10 16:55:58,675 INFO :: Bitmex Client successfully initialized
+2021-08-10 16:55:59,832 INFO :: Bitmex connection opened
+2021-08-10 16:56:00,344 INFO :: Binance connection opened
+2021-08-10 16:56:00,664 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x05ECBE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:56:00,665 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:56:03,416 INFO :: Binance connection opened
+2021-08-10 16:56:03,775 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x05ECBE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:56:03,776 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:56:05,960 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x05F269D0>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:56:05,961 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:56:06,700 ERROR :: Binance connection error: 'NoneType' object has no attribute 'is_ssl'
+2021-08-10 16:56:06,701 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x05ECBE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 16:56:06,702 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-10 17:01:08,029 INFO :: Binance Future Client connected successfully!!
+2021-08-10 17:01:12,491 INFO :: Binance client connection opened.
+2021-08-10 17:01:35,573 INFO :: Binance Future Client connected successfully!!
+2021-08-10 17:01:36,357 INFO :: Binance client connection opened.
+2021-08-10 17:02:19,837 INFO :: Binance Future Client connected successfully!!
+2021-08-10 17:02:20,788 INFO :: Binance client connection opened.
+2021-08-10 17:03:17,745 INFO :: Binance Future Client connected successfully!!
+2021-08-10 17:03:18,864 INFO :: Binance client connection opened.
+2021-08-10 17:04:17,593 INFO :: Binance Future Client connected successfully!!
+2021-08-10 17:04:18,533 INFO :: Binance client connection opened.
+2021-08-10 17:05:48,038 INFO :: Binance Future Client connected successfully!!
+2021-08-10 17:05:49,059 INFO :: Binance client connection opened.
+2021-08-10 17:06:45,743 INFO :: Binance Future Client connected successfully!!
+2021-08-10 17:06:46,862 INFO :: Binance client connection opened.
+2021-08-10 17:07:34,025 INFO :: Binance Future Client connected successfully!!
+2021-08-10 17:07:34,975 INFO :: Binance client connection opened.
+2021-08-10 17:08:05,291 INFO :: Binance Future Client connected successfully!!
+2021-08-10 17:08:06,010 INFO :: Binance client connection opened.
+2021-08-11 20:06:21,674 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:06:23,927 INFO :: Binance client connection opened.
+2021-08-11 20:08:50,328 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:08:51,226 INFO :: Binance client connection opened.
+2021-08-11 20:09:35,762 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:09:36,607 INFO :: Binance client connection opened.
+2021-08-11 20:10:23,901 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:10:24,767 INFO :: Binance client connection opened.
+2021-08-11 20:11:56,263 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:11:57,141 INFO :: Binance client connection opened.
+2021-08-11 20:12:28,862 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:12:29,982 INFO :: Binance client connection opened.
+2021-08-11 20:13:40,413 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:13:41,424 INFO :: Binance client connection opened.
+2021-08-11 20:16:39,162 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:16:40,257 INFO :: Binance client connection opened.
+2021-08-11 20:29:21,803 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:29:22,769 INFO :: Binance client connection opened.
+2021-08-11 20:30:38,041 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:30:38,884 INFO :: Binance client connection opened.
+2021-08-11 20:31:38,619 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:31:39,629 INFO :: Binance client connection opened.
+2021-08-11 20:32:31,690 INFO :: Binance Future Client connected successfully!!
+2021-08-11 20:32:32,583 INFO :: Binance client connection opened.
+2021-08-12 11:03:21,892 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:03:24,501 INFO :: Binance client connection opened.
+2021-08-12 11:04:29,798 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:04:31,059 INFO :: Binance client connection opened.
+2021-08-12 11:12:37,200 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:12:38,789 INFO :: Binance client connection opened.
+2021-08-12 11:13:59,673 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:14:01,242 INFO :: Binance client connection opened.
+2021-08-12 11:14:38,067 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:14:39,654 INFO :: Binance client connection opened.
+2021-08-12 11:16:01,340 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:16:02,752 INFO :: Binance client connection opened.
+2021-08-12 11:16:35,210 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2021-08-12 11:16:36,673 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2021-08-12 11:16:36,698 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2021-08-12 11:16:37,639 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1628747196692&signature=69e4d3d928be6bb1ea92f3331d3949473a984a2c0598f4deb2ef094de48b7d8f HTTP/1.1" 400 88
+2021-08-12 11:16:37,645 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -1021, 'msg': "Timestamp for this request was 1000ms ahead of the server's time."} (error code 400)
+2021-08-12 11:16:37,648 INFO :: Binance Futures Client successfully initialized
+2021-08-12 11:16:37,659 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2021-08-12 11:16:38,468 INFO :: Binance connection opened
+2021-08-12 11:16:38,695 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x0564BE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-12 11:16:38,696 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-12 11:16:38,758 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 200 None
+2021-08-12 11:16:39,035 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2021-08-12 11:16:40,521 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 200 None
+2021-08-12 11:16:40,529 INFO :: Bitmex Client successfully initialized
+2021-08-12 11:16:41,515 INFO :: Binance connection opened
+2021-08-12 11:16:41,678 INFO :: Bitmex connection opened
+2021-08-12 11:16:42,767 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x0564BE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-12 11:16:42,768 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-12 11:16:45,627 INFO :: Binance connection opened
+2021-08-12 11:16:45,878 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x0564BE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-12 11:16:45,879 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-12 11:16:49,401 INFO :: Binance connection opened
+2021-08-12 11:16:49,710 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x0564BE38>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-12 11:16:49,711 ERROR :: close status: 1009
+2021-08-12 11:16:49,711 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-12 11:16:49,915 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x056A6AF0>>: _on_close() takes 2 positional arguments but 4 were given
+2021-08-12 11:16:49,917 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2021-08-12 11:17:40,626 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:17:41,781 INFO :: Binance client connection opened.
+2021-08-12 11:17:44,557 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:17:45,949 INFO :: Binance client connection opened.
+2021-08-12 11:19:03,731 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:19:05,221 INFO :: Binance client connection opened.
+2021-08-12 11:19:48,994 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:19:50,276 INFO :: Binance client connection opened.
+2021-08-12 11:20:40,996 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:20:42,581 INFO :: Binance client connection opened.
+2021-08-12 11:22:39,393 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:22:40,660 INFO :: Binance client connection opened.
+2021-08-12 11:23:14,597 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:23:15,788 INFO :: Binance client connection opened.
+2021-08-12 11:25:57,259 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:25:58,340 INFO :: Binance client connection opened.
+2021-08-12 11:43:33,832 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:43:34,808 INFO :: Binance client connection opened.
+2021-08-12 11:44:12,825 INFO :: Binance Future Client connected successfully!!
+2021-08-12 11:44:14,178 INFO :: Binance client connection opened.
+2021-08-12 12:05:57,471 INFO :: Binance Future Client connected successfully!!
+2021-08-12 12:05:59,895 INFO :: Binance client connection opened.
+2021-08-12 12:06:04,247 WARNING :: Binance client connection closed!!
+2021-08-12 12:06:12,501 INFO :: Binance Future Client connected successfully!!
+2021-08-12 12:06:13,446 INFO :: Binance client connection opened.
+2021-08-12 12:06:18,013 WARNING :: Binance client connection closed!!
+2021-08-12 12:07:55,141 INFO :: Binance Future Client connected successfully!!
+2021-08-12 12:07:56,484 INFO :: Binance client connection opened.
+2021-08-12 12:07:59,409 WARNING :: Binance client connection closed!!
+2021-08-12 12:10:24,819 INFO :: Binance Future Client connected successfully!!
+2021-08-12 12:10:25,895 INFO :: Binance client connection opened.
+2021-08-12 12:10:29,444 WARNING :: Binance client connection closed!!
+2021-08-12 12:46:52,167 INFO :: Binance Future Client connected successfully!!
+2021-08-12 12:46:55,993 INFO :: Binance client connection opened.
+2021-08-12 12:46:59,629 WARNING :: Binance client connection closed!!
+2021-08-12 13:48:38,689 INFO :: Binance Future Client connected successfully!!
+2021-08-12 13:48:41,072 INFO :: Binance client connection opened.
+2021-08-12 13:48:54,086 WARNING :: Binance client connection closed!!
+2021-08-12 16:35:17,320 INFO :: Binance Future Client connected successfully!!
+2021-08-12 16:35:19,212 INFO :: Binance client connection opened.
+2021-08-12 16:35:27,385 WARNING :: Binance client connection closed!!
+2021-08-12 16:44:18,604 INFO :: Binance Future Client connected successfully!!
+2021-08-12 16:44:19,948 INFO :: Binance client connection opened.
+2021-08-12 16:44:56,290 WARNING :: Binance client connection closed!!
+2021-08-12 16:47:21,462 INFO :: Binance Future Client connected successfully!!
+2021-08-12 16:47:22,540 INFO :: Binance client connection opened.
+2021-08-12 16:48:16,458 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 16:48:37,196 WARNING :: Binance client connection closed!!
+2021-08-12 16:49:12,449 INFO :: Binance Future Client connected successfully!!
+2021-08-12 16:49:13,570 INFO :: Binance client connection opened.
+2021-08-12 16:49:25,556 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 16:49:29,418 WARNING :: Binance client connection closed!!
+2021-08-12 16:54:11,847 INFO :: Binance Future Client connected successfully!!
+2021-08-12 16:54:12,907 INFO :: Binance client connection opened.
+2021-08-12 16:54:24,951 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 16:54:28,945 WARNING :: Binance client connection closed!!
+2021-08-12 16:58:27,253 INFO :: Binance Future Client connected successfully!!
+2021-08-12 16:58:28,444 INFO :: Binance client connection opened.
+2021-08-12 16:58:37,079 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 16:58:40,130 WARNING :: Binance client connection closed!!
+2021-08-12 17:01:02,028 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:01:03,287 INFO :: Binance client connection opened.
+2021-08-12 17:02:35,182 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:02:36,443 INFO :: Binance client connection opened.
+2021-08-12 17:02:47,576 WARNING :: Binance client connection closed!!
+2021-08-12 17:04:45,515 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:04:46,951 INFO :: Binance client connection opened.
+2021-08-12 17:04:54,694 WARNING :: Binance client connection closed!!
+2021-08-12 17:05:52,597 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:05:54,177 INFO :: Binance client connection opened.
+2021-08-12 17:07:07,298 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:07:08,646 INFO :: Binance client connection opened.
+2021-08-12 17:09:09,222 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:09:11,202 INFO :: Binance client connection opened.
+2021-08-12 17:09:26,112 WARNING :: Binance client connection closed!!
+2021-08-12 17:11:37,486 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:11:38,700 INFO :: Binance client connection opened.
+2021-08-12 17:11:58,913 WARNING :: Binance client connection closed!!
+2021-08-12 17:12:36,582 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:12:38,154 INFO :: Binance client connection opened.
+2021-08-12 17:13:25,479 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:13:26,418 INFO :: Binance client connection opened.
+2021-08-12 17:14:19,378 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:14:20,957 INFO :: Binance client connection opened.
+2021-08-12 17:14:27,809 WARNING :: Binance client connection closed!!
+2021-08-12 17:16:10,089 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:16:11,348 INFO :: Binance client connection opened.
+2021-08-12 17:16:20,705 WARNING :: Binance client connection closed!!
+2021-08-12 17:21:30,736 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:21:31,989 INFO :: Binance client connection opened.
+2021-08-12 17:21:45,648 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:23:18,143 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:23:19,403 INFO :: Binance client connection opened.
+2021-08-12 17:23:27,972 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:24:25,814 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:24:27,087 INFO :: Binance client connection opened.
+2021-08-12 17:24:34,169 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:25:59,541 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:26:01,002 INFO :: Binance client connection opened.
+2021-08-12 17:26:57,103 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:26:58,603 INFO :: Binance client connection opened.
+2021-08-12 17:29:02,025 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:29:03,401 INFO :: Binance client connection opened.
+2021-08-12 17:29:05,334 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:29:06,689 INFO :: Binance client connection opened.
+2021-08-12 17:29:13,640 WARNING :: Binance client connection closed!!
+2021-08-12 17:29:20,360 WARNING :: Binance client connection closed!!
+2021-08-12 17:29:52,054 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:29:53,639 INFO :: Binance client connection opened.
+2021-08-12 17:33:05,991 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:33:09,182 INFO :: Binance client connection opened.
+2021-08-12 17:33:18,116 WARNING :: Binance client connection closed!!
+2021-08-12 17:38:06,734 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:38:10,233 INFO :: Binance client connection opened.
+2021-08-12 17:38:20,167 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:38:25,314 WARNING :: Binance client connection closed!!
+2021-08-12 17:38:52,813 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:38:54,079 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:38:54,098 INFO :: Binance client connection opened.
+2021-08-12 17:39:06,893 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:39:07,620 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:39:07,967 INFO :: Binance client connection opened.
+2021-08-12 17:40:34,614 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:40:35,202 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:40:35,511 INFO :: Binance client connection opened.
+2021-08-12 17:41:07,526 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:41:08,096 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:41:08,472 INFO :: Binance client connection opened.
+2021-08-12 17:42:43,213 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:42:44,070 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:42:44,098 INFO :: Binance client connection opened.
+2021-08-12 17:42:44,800 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:42:46,708 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:42:48,956 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:42:50,543 WARNING :: Binance client connection closed!!
+2021-08-12 17:56:11,121 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:56:11,989 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:56:12,095 INFO :: Binance client connection opened.
+2021-08-12 17:56:12,397 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:56:14,406 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:56:31,668 WARNING :: Binance client connection closed!!
+2021-08-12 17:56:40,495 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:56:41,243 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:56:41,588 INFO :: Binance client connection opened.
+2021-08-12 17:56:43,169 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:57:33,038 WARNING :: Binance client connection closed!!
+2021-08-12 17:57:45,872 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:57:46,482 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:57:46,795 INFO :: Binance client connection opened.
+2021-08-12 17:57:58,556 WARNING :: Binance client connection closed!!
+2021-08-12 17:58:44,516 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:58:45,281 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 17:58:45,302 INFO :: Binance client connection opened.
+2021-08-12 17:59:10,873 WARNING :: Binance client connection closed!!
+2021-08-12 17:59:22,089 INFO :: Binance Future Client connected successfully!!
+2021-08-12 17:59:23,323 INFO :: Binance client connection opened.
+2021-08-12 18:01:08,088 INFO :: Binance Future Client connected successfully!!
+2021-08-12 18:01:09,207 INFO :: Binance client connection opened.
+2021-08-12 18:03:30,158 INFO :: Binance Future Client connected successfully!!
+2021-08-12 18:03:31,071 INFO :: Binance client connection opened.
+2021-08-12 18:05:11,753 INFO :: Binance Future Client connected successfully!!
+2021-08-12 18:05:13,015 INFO :: Binance client connection opened.
+2021-08-12 18:05:51,738 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:05:54,296 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:05:56,538 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:05:58,539 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:11,908 INFO :: Binance Future Client connected successfully!!
+2021-08-12 18:06:12,506 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:12,789 INFO :: Binance client connection opened.
+2021-08-12 18:06:13,093 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:14,956 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:17,339 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:19,255 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:21,499 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:23,611 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:25,979 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:28,219 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:30,143 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:32,147 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:34,299 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:36,538 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:38,778 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:40,641 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:42,938 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:45,175 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:47,036 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:49,339 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:51,579 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:53,827 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:56,058 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:06:58,299 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:07:00,228 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:07:02,458 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:07:04,698 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:07:06,938 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-12 18:07:07,172 WARNING :: Binance client connection closed!!
+2021-08-19 17:16:49,551 INFO :: Binance Future Client connected successfully!!
+2021-08-19 17:16:52,502 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:16:52,688 INFO :: Binance client connection opened.
+2021-08-19 17:16:53,118 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:16:55,260 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:16:57,171 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:16:59,061 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:17:01,176 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:17:03,053 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:17:04,934 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:17:07,014 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:17:08,858 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:17:10,793 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:17:12,692 ERROR :: Error making GET request to https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker and got the error {"code":-1121,"msg":"Invalid symbol."}
+2021-08-19 17:17:25,258 WARNING :: Binance client connection closed!!
+2021-08-19 17:17:52,344 INFO :: Binance Future Client connected successfully!!
+2021-08-19 17:17:54,046 INFO :: Binance client connection opened.
+2021-08-19 17:17:58,524 WARNING :: Binance client connection closed!!
